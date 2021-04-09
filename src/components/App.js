@@ -158,6 +158,9 @@ function App()
 				<div id={`${place}-name`}>
 					<strong>{obj.name}</strong>
 				</div>
+				<div id={`${place}-title`}>
+					<strong>{obj.name}</strong>
+				</div>
 				<div id={`${place}-description`}>
 					{obj.description}
 				</div>
@@ -195,17 +198,17 @@ function App()
 
 
 			<div id="divContainer">
-				<div id="state-title">
+				
 					{getDivs("state", states[state])}
-				</div>
+				
 
-				<div id="city-title">
+				
 					{getDivs("city", states[state].city[city])}
-				</div>
+				
 
-				<div id="landmark-title">
+				
 					{getDivs("landmark", states[state].city[city].landmarks[landmark])}
-				</div>
+				
 			</div>
 		
 
